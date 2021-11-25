@@ -3,10 +3,10 @@ import Input from "./Field/Input";
 import Label from "./Label";
 import Content from "./Content";
 
-const Text = ( {label, type, name } ) => (
+const Text = ( {label, type, name, register } ) => (
    <Label>
        <Content>{label}</Content>
-       <Input type ={type} name = {name} />
+       <Input type ={type} name = {name} register={register} />
    </Label>
 );
 
